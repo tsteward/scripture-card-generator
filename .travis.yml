@@ -1,0 +1,16 @@
+language: dart
+cache:
+  directories:
+    - $HOME/.pub-cache
+jobs:
+  include:
+    - name: 'Test'
+      dart_task:
+        test: --platform chrome
+    - name: 'Analyzer'
+      dart_task:
+        dartanalyzer: --fatal-warnings .
+    - name: 'Formatting'
+      dart_task:
+        dartfmt: -n . --fix --set-exit-if-changed
+
