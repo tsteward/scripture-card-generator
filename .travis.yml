@@ -21,6 +21,7 @@ jobs:
     if: branch = master
     before_deploy:
       - pub global activate peanut ^2.0.8
+      - git checkout master
       - peanut -m "Build `git rev-parse HEAD`"
     script: ''
     deploy:
