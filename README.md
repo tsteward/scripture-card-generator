@@ -1,7 +1,8 @@
-# scripture_card_generator
+# Scripture Card Generator
 
-A web app that uses [AngularDart](https://webdev.dartlang.org/angular) and
-[AngularDart Components](https://webdev.dartlang.org/components).
+A simple web app that generates a pdf file with scripture card that can be
+printed and cut out to be used for Bible verse memorization.
 
-Created from templates made available by Stagehand under a BSD-style
-[license](https://github.com/dart-lang/stagehand/blob/master/LICENSE).
+## Example Output
+
+![Screenshot](example.png)

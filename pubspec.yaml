@@ -1,5 +1,5 @@
 name: scripture_card_generator
-description: A web app that uses AngularDart Components
+description: A webapp that generates a pdf with bible verse cards
 version: 0.0.1
 homepage: https://tsteward.github.io/scripture-card-generator/
 author: Timothy Steward <tsteward0@gmail.com>
