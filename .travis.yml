@@ -18,8 +18,7 @@ jobs:
       dartfmt: "-n . --fix --set-exit-if-changed"
 deploy:
   provider: pages
-  before_deploy: -pub global activate peanut ^2.0.8 -peanut -m "Build `git rev-parse
-    HEAD`"
+  before_deploy: -pub global activate peanut ^2.0.8 -peanut -m "Build `git rev-parse HEAD`"
   skip-cleanup: false
   github-token: "$GITHUB_TOKEN"
   keep-history: true
