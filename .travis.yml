@@ -18,9 +18,13 @@ jobs:
     dart_task:
       dartfmt: "-n . --fix --set-exit-if-changed"
   - stage: deploy
+    if: branch = master
     before_deploy:
       - pub global activate peanut ^2.0.8
       - peanut -m "Build `git rev-parse HEAD`"
-    deploy: git push https://tsteward:$GITHUB_TOKEN@github.com/tsteward/scripture-card-generator.git
-    on:
-      branch: master
+    script: ''
+    deploy:
+      provider: script
+      script: git push https://tsteward:$GITHUB_TOKEN@github.com/tsteward/scripture-card-generator.git
+      on:
+        branch: master
