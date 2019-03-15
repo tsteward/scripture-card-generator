@@ -6,9 +6,8 @@ import 'package:angular/angular.dart';
 import 'package:angular_components/angular_components.dart';
 import 'package:esv_api/esv_api.dart';
 
+import '../../pdf_generator.dart';
 import 'todo_list_service.dart';
-import 'verse.dart';
-import 'pdf_generator/generate-pdf.dart';
 
 @Component(
   selector: 'todo-list',

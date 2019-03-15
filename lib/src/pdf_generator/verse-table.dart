@@ -2,7 +2,7 @@ import 'package:meta/meta.dart';
 import 'package:pdf/widgets.dart';
 
 import 'verse-widget.dart';
-import '../verse.dart';
+import 'verse.dart';
 
 class VerseTable extends StatelessWidget {
   final List<Verse> verses;

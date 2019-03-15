@@ -1,6 +1,6 @@
 import 'package:pdf/widgets.dart';
 
-import '../verse.dart';
+import 'verse.dart';
 
 class VerseWidget extends StatelessWidget {
   final Verse verse;

@@ -3,7 +3,7 @@ import 'dart:math';
 import 'package:pdf/pdf.dart';
 import 'package:pdf/widgets.dart';
 
-import '../verse.dart';
+import 'verse.dart';
 import 'verse-table.dart';
 
 const _pdfSize = PdfPageFormat.letter;
