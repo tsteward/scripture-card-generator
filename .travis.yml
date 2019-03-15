@@ -26,6 +26,6 @@ jobs:
     script: ''
     deploy:
       provider: script
-      script: git push https://tsteward:$GITHUB_TOKEN@github.com/tsteward/scripture-card-generator.git
+      script: git push https://tsteward:$GITHUB_TOKEN@github.com/tsteward/scripture-card-generator.git origin gh-pages
       on:
         branch: master
