@@ -12,3 +12,6 @@ doc/api/
 
 # Visual Studio Code Files
 .vscode/
+
+# InteliJ Files
+.idea/
