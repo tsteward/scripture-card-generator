@@ -5,7 +5,7 @@ cache:
 env:
   global:
     secure: i8hjenbAm7W/Y+WOUBTm3m9hWHuA4TI8FKEeomKuNeq+7M9NFR36qyHR0XpQUbG/vYcCgtaidUUG6zM9HPZ05r0YGrRDjn8/3Efb66eSI4PCaEWZo+2HSISxZABaThVCPr4stX5/0P/jLXiMwqyubdAT5xLcOG21n48apqq8ZnTA4C6uKWprqCggMwt3KcC8czh2hu//To/tyg6hQwIunnCPs8QWdwOIg8nPtI7cBY5SWq4jaGGQuHrlpon6X7MTtpTP8a8jA0HtdUiKt2wkUUV8kYua6UUonpigwjJNeylmCtE9ff/smu465b8hfBfTyHp4PM0xP+JxEuXvAg4RWmB8Qcf8dSLK8HY7pXQM164yNjAiXTTq/4s3J7OKw85nPlodPLVOnib+GRdgfDNJ5xFAmWudRWheWpYZzUP1l7Oh3F/ykx3bYdy+s10S6/m0khe9C1VEqOeNyFM2NPjNsZX3xewVt1Stz03tI2SqHgbBWaIAaCrwjsKsSUWuU6VZJXZtNraOZ+j5l9mftBYmHWzVOLIp0u6uL6SU3bFooo2zDU0TXz8c1KEszBqXmTBa29vQU9T1zUb+7pkuH4uFTBpqTxNrcAQxeP/bBploS03+YXrpC7lza1dJFFligLsYau2H8nA9cQDqIOtbVG1khkIhhpvUfv2ESQFrYHeOj5g=
-before_install: sed -i -e 's/Insert API Key/`$APIKEY`/g' lib/src/todo_list/todo_list_component.dart
+before_install: sed -i -e "s/Insert API Key/`$APIKEY`/g" lib/src/todo_list/todo_list_component.dart
 jobs:
   include:
   - stage: test
