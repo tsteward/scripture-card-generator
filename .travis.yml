@@ -5,7 +5,7 @@ cache:
 jobs:
   include:
     - name: 'Test'
-        script: pub run build_runner test --fail-on-severe -- -p chrome
+      script: pub run build_runner test --fail-on-severe -- -p chrome
     - name: 'Analyzer'
       dart_task:
         dartanalyzer: --fatal-warnings .
