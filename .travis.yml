@@ -22,6 +22,8 @@ jobs:
     before_deploy:
       - pub global activate peanut ^2.0.8
       - git checkout master
+      - git config user.name "Deployment Bot (from Travis CI)"
+      - git config user.email "deploy@travis-ci.org"
       - git config --add remote.origin.fetch "+refs/heads/gh-pages:refs/remotes/origin/gh-pages"
       - git fetch --depth=50 origin gh-pages
       - git branch --track gh-pages origin/gh-pages
