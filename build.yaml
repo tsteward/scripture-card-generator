@@ -1,0 +1,13 @@
+# Read about `build.yaml` at https://pub.dartlang.org/packages/build_config
+targets:
+  $default:
+    builders:
+      scripture_card_generator:
+        enabled: true
+
+builders:
+  scripture_card_generator:
+    import: "package:scripture_card_generator/src/build_info/builder.dart"
+    builder_factories: ["buildInfo"]
+    build_extensions: {"$lib$": ["src/build_info/build_info.g.dart"]}
+    build_to: cache
